@@ -15,6 +15,10 @@ namespace MicroRabbit.Infra.Bus
 {
     public sealed class RabbitMQBus : IEventBus
     {
+        static void Main(string[] args)
+        {
+
+        }
         private readonly IMediator _mediator;
         private readonly Dictionary<string, List<Type>> _handlers;
         private readonly List<Type> _eventTypes;
